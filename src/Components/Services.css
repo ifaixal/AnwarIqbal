@@ -1,0 +1,98 @@
+.services-section{
+    padding: 1rem 2.5rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+    /* .services-container{
+        border: 1px solid red;
+    } */
+
+        .services-heading{
+            text-align: center;
+            font-size: clamp(1.5rem, 2.5vw, 6rem);
+            font-style: italic;
+        }
+
+        .services-subheading{
+            text-align: center;
+            font-size: clamp(1.25rem, 1vw, 2rem);
+            color: rgb(221, 221, 221);
+        }
+
+        .services-grid{
+            display: flex;
+            gap: 0.75rem;
+            margin: 1rem 0.5rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .service-card{
+                border-radius: 0.5rem;
+                flex: 1 1 300px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                box-shadow: 0 2px 8px rgba(11, 63, 12, 0.5);
+                position: relative;
+            }
+
+                .serviceImage{
+                    width: 100%;
+                    height: auto;
+                    aspect-ratio: 16 / 9;
+                    object-fit: cover;
+                    display: block;
+                }
+
+                .service-card-info{
+                    background-color: var(--primary-color-text);
+                    color: black;
+                    box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.3);
+                    padding: 1rem 1.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    border-top-left-radius: 1rem; /* Rounded corners */
+                    border-top-right-radius: 1rem;
+                    margin-top: -3rem;
+                    z-index: 1;
+                }
+
+                .service-title {
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    margin-bottom: 0.25rem;
+                }
+                
+                .service-description {
+                    font-size: 0.95rem;
+                    color: #3a3a3a;
+                    margin-bottom: 0.5rem;
+                }
+                
+                .service-card-info ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0.5rem 0;
+                }
+                
+                .service-card-info ul li {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0.25rem;
+                }
+                
+                .service-card-info ul li::before {
+                    content: '✔';
+                    color: var(--primary-color);
+                    margin-right: 0.5rem;
+                }
+
+@media (max-width: 768px) {
+    .services-grid{
+        flex-direction: column;
+    }
+}

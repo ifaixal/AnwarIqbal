@@ -1,0 +1,36 @@
+.Footer{
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 3rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+    .footerTitle{
+        letter-spacing: 6px;
+    }
+
+    .list, .linksSocial{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        list-style-type: none;
+    }
+
+        .list li a{
+            color: white;
+            text-decoration: none;
+        }
+
+    .facebook, .freelancer, .email{
+        cursor: pointer;
+    }
+
+    .copyright{
+        margin-top: auto;
+        padding-top: 1rem;
+        font-size: 0.9rem;
+    }

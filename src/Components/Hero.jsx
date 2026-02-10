@@ -4,7 +4,7 @@ import './Hero.css'
 
 const Hero = () => {
   return (
-    <div className='HeroSection'>
+    <div className='HeroSection' id='Home'>
         <div className="leftContainer">
           <div className="textArea">
             <ReactTyped
@@ -18,7 +18,7 @@ const Hero = () => {
           </div>
 
           <div className="CTA">
-            <button>Let's Discuss!</button>
+            <button >Let's Discuss!</button>
           </div>
         </div>
 

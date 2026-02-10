@@ -1,8 +1,24 @@
 .services-section{
-    padding: 1rem 2.5rem;
+    padding: 5rem 1rem 2.5rem;
     background-color: var(--primary-color);
     color: white;
+    position: relative;
 }
+
+    .services-wave {
+        position: absolute;
+        top: -1px;
+        left: 0;
+        width: 100%;
+        line-height: 0;
+        overflow: hidden;
+    }
+
+    .services-wave svg {
+        display: block;
+        width: 100%;
+        height: 80px;
+    }
 
     /* .services-container{
         border: 1px solid red;
@@ -16,32 +32,31 @@
 
         .services-subheading{
             text-align: center;
-            font-size: clamp(1.25rem, 1vw, 2rem);
+            font-size: clamp(1rem, 1vw, 2rem);
             color: rgb(221, 221, 221);
         }
 
         .services-grid{
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 0.75rem;
             margin: 2rem 0.5rem;
-            align-items: center;
-            justify-content: space-between;
         }
 
             .service-card{
                 border-radius: 0.5rem;
-                flex: 1 1 300px;
+                height: fit-content;
                 overflow: hidden;
                 display: flex;
                 flex-direction: column;
                 background-color: #fff;
                 box-shadow: 0 2px 8px rgba(11, 63, 12, 0.5);
-                position: relative;
+                /* position: relative; */
             }
 
                 .serviceImage{
                     width: 100%;
-                    height: auto;
+                    height: 30vh;
                     aspect-ratio: 16 / 9;
                     object-fit: cover;
                     display: block;
@@ -51,7 +66,7 @@
                     background-color: var(--primary-color-text);
                     color: black;
                     box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.3);
-                    padding: 1rem 1.5rem;
+                    padding: 1rem;
                     display: flex;
                     flex-direction: column;
                     gap: 0.5rem;
@@ -62,13 +77,13 @@
                 }
 
                 .service-title {
-                    font-size: 1.25rem;
+                    font-size: clamp(0.8rem, 1vw, 1.25rem);
                     font-weight: 600;
                     margin-bottom: 0.25rem;
                 }
                 
                 .service-description {
-                    font-size: 0.95rem;
+                    font-size: clamp(0.5rem, 1vw, 0.95rem);
                     color: #3a3a3a;
                     margin-bottom: 0.5rem;
                 }
@@ -83,6 +98,7 @@
                     display: flex;
                     align-items: center;
                     margin-bottom: 0.25rem;
+                    font-size: clamp(0.5rem, 1vw, 0.95rem);
                 }
                 
                 .service-card-info ul li::before {
@@ -94,5 +110,15 @@
 @media (max-width: 768px) {
     .services-grid{
         flex-direction: column;
+    }
+
+    .serviceImage{
+        max-height: 50vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .services-grid{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }

@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
 
         <div className="rightContainer">
-          <img src="../../public/Vector - 3.png" alt="img"/>
+          <img src="/Vector - 3.png" alt="img"/>
         </div>
     </div>
   )

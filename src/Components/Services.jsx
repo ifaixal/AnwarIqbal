@@ -7,28 +7,28 @@ const services = [
     description:
       "Monthly financial statements, profit and loss reports, and balance sheet to keep you informed about your business performance.",
     tags: ["Monthly P&L Statements", "Balance Sheet Reports", "Cash Flow Analysis"],
-    imgSrc: "../../public/FRBGIMG.jpg"
+    imgSrc: "/FRBGIMG.jpg"
   },
   {
     title: "Tax Preparation",
     description:
       "Stay complaint and maximize deduction with our professional tax preparation and planning services.",
     tags: ["Quarterly Tax Fillings", "Annual Tax Returns", "Tax Planning Strategy"],
-    imgSrc: "../../public/TaxBGIMG.jpg"
+    imgSrc: "/public/TaxBGIMG.jpg"
   },
   {
     title: "Payroll Services",
     description:
       "Complete payroll management including calculations, tax withholdings, and compliance reporting.",
     tags: ["Payroll Processing", "Tax Withholdings", "Compliance Reporting"],
-    imgSrc: "../../public/PayrollBGIMG.jpg"
+    imgSrc: "/public/PayrollBGIMG.jpg"
   },
   {
     title: "Account Payable & Receivable",
     description:
       "Manage your incoming and outgoing payments efficiently with our comprehensive AR/AP services.",
     tags: ["Invoice Management", "Payment Processing", "Collections Support"],
-    imgSrc: "../../public/ApArBGIMG.jpg"
+    imgSrc: "/ApArBGIMG.jpg"
   }
 ];
 
